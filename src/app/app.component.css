@@ -1,0 +1,33 @@
+.jumbotron{
+    margin-bottom: 0px;
+    background-image: url(../assets/Universe.jpeg);
+    background-position: 44% 56%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: #52597d 0.5em 0.5em 0.5em;
+}
+
+agm-map {
+    height: 400px;
+}
+
+.input-result{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+li {
+    list-style-type: none;
+    width: auto;
+    opacity: 0.75;
+    border: 1px solid rgb(245, 239, 239);
+}
+a:hover { 
+    background-color: rgb(219, 229, 233);
+  }

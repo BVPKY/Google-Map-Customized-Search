@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <h1 class="text-center" [ngStyle]="{ 'color': changeColor }">{{title}}</h1>
+</div>
+
+<div class="input-group">
+  <input type="text" placeholder="Enter Location" class="form-control" (input)="onEnter(value)" (change)="setFlag()"
+    [(ngModel)]="value" #search />
+</div>
+
+<div class="input-result" *ngIf="flag">
+  <li *ngFor="let client of geoSearch.names">
+    <a (click)="onselectClient(client)">{{client}}</a>
+  </li>
+</div>
+
+<agm-map [zoom]="zoom" [latitude]="latitude" [longitude]="longitude" [fullscreenControl]="true" [mapTypeControl]="true" [usePanning]="true" [fitBounds]="true">
+  <agm-marker [latitude]="latitude" [longitude]="longitude" [agmFitBounds]="true"></agm-marker>
+</agm-map>
+
+<router-outlet></router-outlet>
