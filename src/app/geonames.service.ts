@@ -9,7 +9,7 @@ export class GeonameService {
     ids: any = [];
     latitude: any;
     longitude: any;
-    private _url = `http://34.73.198.86`;
+    private _url = `http://35.185.97.249`;
     id: any;
     constructor(private http: HttpClient) { }
 
