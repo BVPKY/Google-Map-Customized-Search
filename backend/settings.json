@@ -1,0 +1,107 @@
+{
+  "mappings": {
+    "geoname": {
+      "properties": {
+        "id": {
+          "type": "long"
+        },
+        "name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ascii": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "alt_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "lat": {
+          "type": "float"
+        },
+        "long": {
+          "type": "float"
+        },
+        "feat_class": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "feat_code": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "country": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "cc2": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "admin1": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "admin2": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "admin3": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "admin4": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "gtopo30": {
+          "type": "long"
+        },
+        "population": {
+          "type": "long"
+        },
+        "elevation": {
+          "type": "long"
+        },
+        "dem": {
+          "type": "long"
+        },
+        "tz": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "modified_at": {
+          "type": "date"
+        }
+      }
+    }
+  },
+  "settings": {
+    "index": {
+      "number_of_shards": "2",
+      "number_of_replicas": "1"
+    }
+  }
+}
+
