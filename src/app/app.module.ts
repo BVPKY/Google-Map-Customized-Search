@@ -25,7 +25,7 @@ import { AutocompleteLibModule } from 'angular-ng-autocomplete';
     HttpClientModule,
     AutocompleteLibModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCBbdKeV6BFo9gxqtDl3eLLWQ5HPqWfhiI',
+      apiKey: '--Please Enter You Google Map API Key--',
       libraries: ['places']
     })
   ],
